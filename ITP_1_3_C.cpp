@@ -9,9 +9,9 @@ int main(){
             break;
         }
         if (x > y){
-            cout << y << x;
+            cout << y << " " << x << endl;
         } else {
-            cout << x << y;
+            cout << x << " " << y << endl;
         }
     }
     return 0;
