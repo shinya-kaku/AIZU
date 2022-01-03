@@ -6,6 +6,7 @@ using namespace std;
 int main(){
     std::vector<int> vec(10000);
     int n;
+    cin >> n;
     for (int i = 0; i < n; i++) {
        cin >> vec.at(i);
     }
