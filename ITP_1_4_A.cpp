@@ -8,7 +8,7 @@ int main(){
     cin >> a >> b;
     r = a/b;
     d = a%b;
-    f = a/b;
+    f = (double)a/(double)b;
     cout << r << " " << d << " " << f << endl;
     return 0;
 }
