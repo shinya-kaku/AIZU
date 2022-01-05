@@ -29,7 +29,7 @@ using namespace std;
 //Official House
 
 int main(){
-    vector< vector< vector< vector<int> > > > data(4, vector<vector<int>>(3, vector<int>(10,0)));
+    vector< vector< vector<int> > > data(4, vector<vector<int>>(3, vector<int>(10)));
 
     //init      
     for (int i = 0; i < 4; i++) {
@@ -46,7 +46,7 @@ int main(){
     for (int i=0; i<n; i++){
         int b, f, r, v;
         cin >> b >> f >> r >> v;
-        data.at(b).at(f).at(r) += v;
+        data.at(b-1).at(f-1).at(r-1) += v;
     }
 
     //output
