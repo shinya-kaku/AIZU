@@ -4,9 +4,9 @@ using namespace std;
 
 int main(){
     int H, W;
-    bool check = true;
     do {
         cin >> H >> W;
+        bool check = true;
         if (H == 0 and W == 0){
             break;
         }
