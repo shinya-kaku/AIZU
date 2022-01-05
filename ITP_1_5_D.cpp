@@ -15,11 +15,11 @@ int main(){
     for (int x = i; i <= n; i++){
         x = i;
         if (x % 3 == 0){
-            cout << " 3% " << i;
+            cout << " " << i;
         } else {
             do {
                 if (x % 10 == 3){
-                    cout << " 10% " << i;
+                    cout << " " << i;
                     break;
                 } else {
                     x /= 10;
