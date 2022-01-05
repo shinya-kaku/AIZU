@@ -13,7 +13,10 @@ int main(){
        size = i;
     }
     for (int i=size; i>=0; i--){
-        cout << vec[i] << " ";
+        cout << vec[i];
+        if (i != 0){
+            cout << " ";
+        }
     }
     cout << endl;
 
