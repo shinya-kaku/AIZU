@@ -29,7 +29,7 @@ using namespace std;
 //Official House
 
 int main(){
-    vector< vector< vector<int> > > data(4, vector<vector<int>>(3, vector<int>(10)));
+    vector< vector< vector<int> > > data(4, vector< vector<int> >(3, vector<int>(10)));
 
     //init      
     for (int i = 0; i < 4; i++) {
@@ -53,14 +53,13 @@ int main(){
     for (int i = 0; i < 4; i++) {
         for (int j = 0; j < 3; j++) {
             for (int k = 0; k < 10; k++){
-                cout << data.at(i).at(j).at(k);
-                if (k!=9){
-                    cout << " ";
-                }
+                cout << " " << data.at(i).at(j).at(k);
             }
             cout << endl;
         }
-        cout << "####################" << endl;
+        if (i != 3){
+            cout << "####################" << endl;
+        }
     }
 
     return 0;
