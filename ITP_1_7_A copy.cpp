@@ -15,7 +15,13 @@ int main(){
         int c = 0;
         for (int i=1; i<n; i++){
             for (int j=i; j<n; j++){
+                if (i == j){
+                    continue;
+                }
                 for (int k=j; k<n; k++){
+                    if (j == k){
+                        continue;
+                    }
                     if (i+j+k == x){
                         c += 1;
                     }
