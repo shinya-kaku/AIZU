@@ -1,9 +1,8 @@
 #include <iostream>
-#include <vector>
 
 using namespace std;
 
-//Matrix Vector Multiplication
+//Grading
 
 int main(){
 
