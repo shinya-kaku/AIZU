@@ -13,16 +13,17 @@ int main(){
         if (n == 0 and x == 0){
             break;
         }
-        for (int i=0; i<n; i++){
-            for (int j=0; j<n; j++){
+        for (int i=1; i<n; i++){
+            for (int j=i+1; j<n; j++){
                 if (i == j){
                     continue;
                 }
-                for (int k=0; k<n; k++){
+                for (int k=j+1; k<n; k++){
                     if (i == k or j == k){
                         continue;
                     }
                     if (x == i + j + k){
+                        cout << i << " " <<  j << " " << k << endl;
                         answer_count += 1;
                     }
                 }
