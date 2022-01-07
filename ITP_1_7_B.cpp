@@ -6,8 +6,8 @@ using namespace std;
 
 int main(){
 
-    int answer_count = 0;
     do {
+        int answer_count = 0;
         int n, x;
         cin >> n >> x;
         if (n == 0 and x == 0){
@@ -23,9 +23,9 @@ int main(){
                 }
             }
         }
+        cout << answer_count << endl;
     }while(1);
 
-    cout << answer_count << endl;
 
 
     return 0;
