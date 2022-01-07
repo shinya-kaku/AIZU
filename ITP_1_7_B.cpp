@@ -17,7 +17,7 @@ int main(){
             for (int j=i+1; j<=n; j++){
                 for (int k=j+1; k<=n; k++){
                     if (x == i + j + k){
-                        cout << i << " " <<  j << " " << k << endl;
+                        /*cout << i << " " <<  j << " " << k << endl;*/
                         answer_count += 1;
                     }
                 }
