@@ -15,13 +15,7 @@ int main(){
         }
         for (int i=1; i<n; i++){
             for (int j=i+1; j<n; j++){
-                if (i == j){
-                    continue;
-                }
                 for (int k=j+1; k<n; k++){
-                    if (i == k or j == k){
-                        continue;
-                    }
                     if (x == i + j + k){
                         cout << i << " " <<  j << " " << k << endl;
                         answer_count += 1;
