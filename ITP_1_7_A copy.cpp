@@ -6,7 +6,7 @@ using namespace std;
 
 int main(){
 
-    for(int i=0; i; i++){
+    do{
         int n, x;
         cin >> n >> x;
         if (n == 0 and x == 0){
@@ -24,12 +24,13 @@ int main(){
                     }
                     if (i+j+k == x){
                         c += 1;
+                        cout << i << j << endl;
                     }
                 }
             }
         }
         cout << c << endl;
-    }
+    }while(1);
 
     return 0;
 }
