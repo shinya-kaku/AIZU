@@ -7,17 +7,18 @@ using namespace std;
 int main(){
 
     string in;
-    cin >> in;
+    getline(cin, in);
 
     for (int i=0; i<in.length(); i++){
-        if (in.at(i).isupper){
-            in.at(i) = tolower(in.at(i));
+        char& c = in.at(i);
+        if (isupper(c)){
+            c = tolower(c);
         } else {
-            in.at(i) = toupper(in.at(i));
+            c = toupper(c);
         }
     }
 
-    cout << in;
+    cout << in << endl;
 
     return 0;
 }
