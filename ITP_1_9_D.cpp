@@ -18,10 +18,12 @@ int main(){
         string p;
         int a, b;
         cin >> command >> a >> b;
+        //b = b - a + 1;
         if (command == "print"){
-            cout << str.substr(a, a+b+1) << endl;
+            //cout << a << b << endl;
+            cout << str.substr(a, b - a + 1) << endl;
         } else if (command == "reverse"){
-            reverse(str.begin()+a, str.begin()+b+1);
+            reverse(&str[a], &str[b+1]);
         } else if (command == "replace"){
             cin >> p;
             str.replace(a, b-a+1, p);
